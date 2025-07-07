@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KRYNEST 行動名片</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 768px;
+      height: auto;
+      aspect-ratio: 768 / 1358;
+      margin: auto;
+      overflow: hidden;
+      max-height: 100vh;
+    }
+    .container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .hotspot {
+      position: absolute;
+      z-index: 10;
+    }
+
+    #wechat {
+      left: 9%;
+      top: 73.5%;
+      width: 18%;
+      height: 7%;
+    }
+    #download {
+      left: 35%;
+      top: 73.5%;
+      width: 18%;
+      height: 7%;
+    }
+    #shopee {
+      left: 61%;
+      top: 73.5%;
+      width: 18%;
+      height: 7%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="background.png" alt="KRYNEST 名片" />
+    <a href="weixin://dl/chat" class="hotspot" id="wechat" title="開啟 WeChat 聊天"></a>
+    <a href="wechat_qrcode.jpg" target="_blank" class="hotspot" id="download" title="長按圖片可儲存 QR 圖片"></a>
+    <a href="https://tw.shp.ee/Z5rHjf6" class="hotspot" id="shopee" title="前往蝦皮商店"></a>
+  </div>
+</body>
+</html>
